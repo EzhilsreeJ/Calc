@@ -123,8 +123,8 @@ Publish the website in the given URL.
 
 <body>
    <div class="App-container">
-
-
+      <h1>Ezhil sree Calculator</h1>
+      <h1>Reg No:212223230056</h1>
       <input type="text" id="result" placeholder="Enter Value..." readonly="" />
       <div>
          <input type="button" id="numberButton" value="7" onclick="display('7')" />
