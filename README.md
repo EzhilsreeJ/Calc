@@ -1,5 +1,5 @@
 # Ex.08 Design of a Standard Calculator
-## Date:
+## Date:20.12.2023
 
 ## AIM:
 To design a web application for a standard calculator with minimum five operations.
@@ -162,5 +162,7 @@ Publish the website in the given URL.
 ## OUTPUT:
 ![Alt text](image.png)
 ![Alt text](image-1.png)
+
+
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.
