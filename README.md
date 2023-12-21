@@ -53,6 +53,11 @@ Publish the website in the given URL.
          temp = temp.substring(0, len - 1)
          document.getElementById('result').value = temp;
       }
+      function squareRoot(){
+         var x = document.getElementById('result').value ;
+         var result = Math.pow(x,0.5)
+         document.getElementById('result').value=result
+      }
 
    </script>
    <style>
@@ -68,26 +73,36 @@ Publish the website in the given URL.
          text-align: center;
          background-color: pink;
       }
-
+      #h1{
+         text-align: center;
+      }
       #numberButton,
       #operatorButton,
-      #EqualButton,
       #clearButton,
       #deleteButton {
          padding: 20px;
-         margin-top: 10px;
+         margin-top: 8px;
          margin-left: 10px;
          border: 5px;
          cursor: pointer;
          border-radius: 5px;
 
       }
+      #EqualButton {
+         border-radius: 5px;
+         height: 57px;
+         border: 5px;
+         padding-left: 10px;
+         background-color: rgb(155, 197, 61); 
+         font-size: 20px;
+         font-weight: 500;
 
+      }
       #result {
          border-radius: 5px;
-         height: 45px;
+         height: 55px;
          border: 5px;
-         padding-left: 20px;
+         padding-left: 15px;
          color: black;
          font-size: 28px;
          font-weight: 500;
@@ -111,7 +126,7 @@ Publish the website in the given URL.
          margin-left: 3px;
       }
 
-      @media(max-width:576px) {
+      @media(max-width:580px) {
          .App-container {
             padding: 20px 0px;
             margin: 50% 6%;
@@ -125,7 +140,9 @@ Publish the website in the given URL.
    <div class="App-container">
       <h1>Ezhil sree Calculator</h1>
       <h1>Reg No:212223230056</h1>
+
       <input type="text" id="result" placeholder="Enter Value..." readonly="" />
+      <input type="button" id="EqualButton" value="Ans" onclick="SolveCalculation()" />
       <div>
          <input type="button" id="numberButton" value="7" onclick="display('7')" />
          <input type="button" id="numberButton" value="8" onclick="display('8')" />
@@ -146,21 +163,21 @@ Publish the website in the given URL.
       </div>
       <div className='lastdiv'>
          <input type="button" id="numberButton" value="0" onclick="display('0')" />
-         <input type="button" id="EqualButton" value="=" onclick="SolveCalculation()" />
          <input type="button" id="numberButton" value="." onclick="display('.')" />
-         <input type="button" id="operatorButton" value="+" onclick="display('+')" />
+        <input type="button" id="operatorButton" value="√" onclick="squareRoot()" /> 
+	     <input type="button" id="operatorButton" value="+" onclick="display('+')" />
       </div>
       <div>
          <input type="button" id='deleteButton' value="Del" onclick="deleteFuntion()" />
          <input type="button" id="clearButton" onclick="ClearFuntion()" value="C" />
+	
       </div>
    </div>
 </body>
-
 </html>
 ```
 ## OUTPUT:
-![Alt text](image-2.png)
+![Alt text](image-1.png)
 ![Alt text](image.png)
 
 ## RESULT:
